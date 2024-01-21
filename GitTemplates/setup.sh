@@ -3,5 +3,8 @@
 BASEDIR=$(dirname $0)
 cd $BASEDIR
 
-cp ./pre-commit ../.git/hooks/pre-commit
-chmod a+x ../.git/hooks/pre-commit
+git config core.commentChar ';'
+git config commit.template GitTemplates/commit-template
+git config core.hooksPath ./hooks
+
+chmod -R +x ./hooks
