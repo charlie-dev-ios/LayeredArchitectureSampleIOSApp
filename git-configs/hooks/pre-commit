@@ -1,6 +1,9 @@
 #!/bin/zsh
 
-echo "pre-commit"
+echo "pre-commit!"
+pwd
+echo "$SRCROOT"
+xcrun --sdk macosx swift run -c release \
+        --package-path BuildTools \
+        swiftformat LayeredArchitectureSample
 
-SDKROOT=(xcrun --sdk macosx --show-sdk-path)
-swift run -c release --package-path BuildTools swiftformat

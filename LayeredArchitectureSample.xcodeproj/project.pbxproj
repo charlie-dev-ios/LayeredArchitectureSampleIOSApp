@@ -76,7 +76,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B82F01282B5D57B0008D782E /* Build configuration list for PBXNativeTarget "LayeredArchitectureSample" */;
 			buildPhases = (
-				B82F012F2B5D61CA008D782E /* ShellScript */,
 				B82F01162B5D57AC008D782E /* Sources */,
 				B82F01172B5D57AC008D782E /* Frameworks */,
 				B82F01182B5D57AC008D782E /* Resources */,
@@ -134,27 +133,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B82F012F2B5D61CA008D782E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "SDKROOT=(xcrun --sdk macosx --show-sdk-path)\nswift run -c release --package-path BuildTools swiftformat \"$SRCROOT\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B82F01162B5D57AC008D782E /* Sources */ = {
