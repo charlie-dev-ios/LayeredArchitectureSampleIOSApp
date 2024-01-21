@@ -5,6 +5,6 @@ cd $BASEDIR
 
 git config core.commentChar ';'
 git config commit.template git-configs/commit-template
-git config core.hooksPath ./hooks
+git config core.hooksPath git-configs/hooks
 
 chmod -R +x ./hooks
