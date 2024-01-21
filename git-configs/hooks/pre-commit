@@ -1,4 +1,6 @@
 #!/bin/zsh
 
+echo "pre-commit"
+
 SDKROOT=(xcrun --sdk macosx --show-sdk-path)
 swift run -c release --package-path BuildTools swiftformat
