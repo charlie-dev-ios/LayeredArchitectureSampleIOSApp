@@ -2,5 +2,9 @@
 .DS_Store
 
 # Xcode
-/**/xcuserdata
-/**/.build
+xcuserdata/
+.build/
+
+# SwiftPM
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata

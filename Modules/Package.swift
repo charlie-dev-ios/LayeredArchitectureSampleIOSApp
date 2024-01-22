@@ -3,9 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "BuildTools",
+    name: "Modules",
     platforms: [.iOS(.v17)],
-    dependencies: [
-         .package(url: "https://github.com/nicklockwood/SwiftFormat", from: "0.49.0"),
-    ]
+    dependencies: []
 )
