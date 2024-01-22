@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-@main
-struct LayeredArchitectureSampleApp: App {
+@main struct LayeredArchitectureSampleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -2,8 +2,6 @@
 
 import PackageDescription
 
-let package = Package(
-    name: "Modules",
-    platforms: [.iOS(.v17)],
-    dependencies: []
-)
+let package = Package(name: "Modules",
+                      platforms: [.iOS(.v17)],
+                      dependencies: [])
