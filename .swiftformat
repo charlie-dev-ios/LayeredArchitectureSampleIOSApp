@@ -1,0 +1,113 @@
+--swiftversion 5.9
+
+--exclude **/DerivedData
+--exclude **/.build
+
+# デフォルト設定（デフォルトで有効になっているため無効にしたい場合コメントアウトを解除する）
+# default configuration of these rule is enabled, unset comment out to disable rule
+# --disable andOperator
+# --disable anyObjectProtocol
+# --disable assertionFailures
+# --disable blankLinesAroundMark
+# --disable blankLinesAtEndOfScope
+# --disable blankLinesAtStartOfScope
+# --disable blankLinesBetweenScopes
+# --disable braces
+# --disable conditionalAssignment
+# --disable consecutiveBlankLines
+# --disable consecutiveSpaces
+# --disable duplicateImports
+# --disable elseOnSameLine
+# --disable emptyBraces
+# --disable enumNamespaces
+# --disable extensionAccessControl
+# --disable fileHeader
+# --disable genericExtensions
+# --disable hoistAwait
+--disable hoistPatternLet
+# --disable hoistTry
+# --disable indent
+# --disable initCoderUnavailable
+# --disable leadingDelimiters
+# --disable linebreakAtEndOfFile
+# --disable linebreaks
+# --disable modifierOrder
+# --disable noExplicitOwnership
+# --disable numberFormatting
+# --disable opaqueGenericParameters
+# --disable preferKeyPath
+--disable preferForLoop
+--anonymousforeach ignore
+--onelineforeach ignore
+# --disable redundantBackticks
+# --disable redundantBreak
+# --disable redundantClosure
+# --disable redundantExtensionACL
+# --disable redundantFileprivate
+# --disable redundantGet
+# --disable redundantInit
+# --disable redundantLet
+# --disable redundantLetError
+# --disable redundantNilInit
+# --disable redundantObjc
+# --disable redundantOptionalBinding
+# --disable redundantParens
+# --disable redundantPattern
+# --disable redundantRawValues
+# --disable redundantReturn
+# --disable redundantSelf
+# --disable redundantType
+# --disable redundantVoidReturnType
+# --disable semicolons
+# --disable sortDeclarations
+# --disable sortedImports
+# --disable spaceAroundBraces
+# --disable spaceAroundBrackets
+# --disable spaceAroundComments
+# --disable spaceAroundGenerics
+# --disable spaceAroundOperators
+# --disable spaceAroundParens
+# --disable spaceInsideBraces
+# --disable spaceInsideBrackets
+# --disable spaceInsideComments
+# --disable spaceInsideGenerics
+# --disable spaceInsideParens
+# --disable strongOutlets
+# --disable strongifiedSelf
+# --disable todos
+# --disable trailingClosures
+--commas inline
+# --disable trailingSpace
+# --disable typeSugar
+--stripunusedargs closure-only
+# --disable void
+# wrap
+--maxwidth 130
+# wrapArguments
+--wraparguments after-first
+--wrapparameters after-first
+--wrapcollections before-first
+--closingparen same-line
+# wrapAttributes
+--funcattributes same-line
+--typeattributes same-line
+--varattributes same-line
+--disable wrapMultilineStatementBraces
+--disable wrapSingleLineComments
+--disable yodaConditions
+--ifdef no-indent
+
+# Optin
+# --enable acronyms
+--enable blankLineAfterImports
+--enable blankLinesBetweenImports
+--enable blockComments
+--enable docComments
+--enable isEmpty
+# --marktypes never
+--enable sortSwitchCases
+--enable wrapConditionalBodies
+--enable wrapEnumCases
+--enable wrapLoopBodies
+# --enable wrapMultilineConditionalAssignment
+# --enable wrapSwitchCases
