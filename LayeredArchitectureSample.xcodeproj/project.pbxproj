@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B82F011E2B5D57AC008D782E /* LayeredArchitectureSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F011D2B5D57AC008D782E /* LayeredArchitectureSampleApp.swift */; };
-		B82F01202B5D57AC008D782E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F011F2B5D57AC008D782E /* ContentView.swift */; };
 		B82F01222B5D57B0008D782E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82F01212B5D57B0008D782E /* Assets.xcassets */; };
 		B82F01252B5D57B0008D782E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82F01242B5D57B0008D782E /* Preview Assets.xcassets */; };
 		B89FAFFF2B6629AC00D19C23 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = B89FAFFE2B6629AC00D19C23 /* Common */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		B82F011A2B5D57AC008D782E /* LayeredArchitectureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayeredArchitectureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82F011D2B5D57AC008D782E /* LayeredArchitectureSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeredArchitectureSampleApp.swift; sourceTree = "<group>"; };
-		B82F011F2B5D57AC008D782E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B82F01212B5D57B0008D782E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B82F01242B5D57B0008D782E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B89FAFFC2B66297C00D19C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				B82F011D2B5D57AC008D782E /* LayeredArchitectureSampleApp.swift */,
-				B82F011F2B5D57AC008D782E /* ContentView.swift */,
 				B89FB00B2B662BDA00D19C23 /* Support */,
 				B89FB00A2B662BCF00D19C23 /* Resources */,
 				B89FB00C2B662C2B00D19C23 /* Preview Content */,
@@ -183,7 +180,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B82F01202B5D57AC008D782E /* ContentView.swift in Sources */,
 				B82F011E2B5D57AC008D782E /* LayeredArchitectureSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

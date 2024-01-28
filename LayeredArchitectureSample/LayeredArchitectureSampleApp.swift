@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import Feature
 
 @main struct LayeredArchitectureSampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }
