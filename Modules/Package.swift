@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(name: "Modules",
-                      platforms: [.iOS(.v17)],
+                      platforms: [.iOS(.v15)],
                       products: [
                           .library(name: "Common", targets: ["Common"]),
                           .library(name: "DomainModel", targets: ["DomainModel"]),
@@ -12,11 +12,16 @@ let package = Package(name: "Modules",
                           .library(name: "Repository", targets: ["Repository"]),
                           .library(name: "UseCase", targets: ["UseCase"])
                       ],
-                      dependencies: [],
+                      dependencies: [
+                          .package(url: "https://github.com/johnpatrickmorgan/NavigationBackport",
+                                   .upToNextMinor(from: "0.9.0"))
+                      ],
                       targets: [
                           .target(name: "Common"),
                           .target(name: "DomainModel"),
-                          .target(name: "Feature"),
+                          .target(name: "Feature", dependencies: [
+                              .product(name: "NavigationBackport", package: "NavigationBackport")
+                          ]),
                           .target(name: "Infra"),
                           .target(name: "Repository"),
                           .target(name: "UseCase")
