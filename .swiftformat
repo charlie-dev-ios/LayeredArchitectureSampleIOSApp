@@ -87,7 +87,8 @@
 --wraparguments after-first
 --wrapparameters after-first
 --wrapcollections before-first
---closingparen same-line
+# --closingparen same-line
+--closingparen balanced
 # wrapAttributes
 --funcattributes same-line
 --typeattributes same-line
