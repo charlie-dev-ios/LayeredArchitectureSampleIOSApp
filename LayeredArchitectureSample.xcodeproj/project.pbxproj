@@ -85,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				B82F01212B5D57B0008D782E /* Assets.xcassets */,
-				B82F01242B5D57B0008D782E /* Preview Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -101,6 +100,7 @@
 		B89FB00C2B662C2B00D19C23 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				B82F01242B5D57B0008D782E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
