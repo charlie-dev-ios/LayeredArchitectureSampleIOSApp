@@ -9,8 +9,6 @@ import NavigationBackport
 import SwiftUI
 
 public struct RootView: View {
-    @State private var path = NBNavigationPath()
-
     public init() {}
 
     public var body: some View {
