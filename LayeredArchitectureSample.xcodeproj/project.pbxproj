@@ -11,6 +11,12 @@
 		B82F01202B5D57AC008D782E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F011F2B5D57AC008D782E /* ContentView.swift */; };
 		B82F01222B5D57B0008D782E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82F01212B5D57B0008D782E /* Assets.xcassets */; };
 		B82F01252B5D57B0008D782E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82F01242B5D57B0008D782E /* Preview Assets.xcassets */; };
+		B89FAFFF2B6629AC00D19C23 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = B89FAFFE2B6629AC00D19C23 /* Common */; };
+		B89FB0012B6629AC00D19C23 /* DomainModel in Frameworks */ = {isa = PBXBuildFile; productRef = B89FB0002B6629AC00D19C23 /* DomainModel */; };
+		B89FB0032B662B2100D19C23 /* Feature in Frameworks */ = {isa = PBXBuildFile; productRef = B89FB0022B662B2100D19C23 /* Feature */; };
+		B89FB0052B662B2100D19C23 /* Infra in Frameworks */ = {isa = PBXBuildFile; productRef = B89FB0042B662B2100D19C23 /* Infra */; };
+		B89FB0072B662B2100D19C23 /* Repository in Frameworks */ = {isa = PBXBuildFile; productRef = B89FB0062B662B2100D19C23 /* Repository */; };
+		B89FB0092B662B2100D19C23 /* UseCase in Frameworks */ = {isa = PBXBuildFile; productRef = B89FB0082B662B2100D19C23 /* UseCase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,7 @@
 		B82F011F2B5D57AC008D782E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B82F01212B5D57B0008D782E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B82F01242B5D57B0008D782E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B89FAFFC2B66297C00D19C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B89FB0092B662B2100D19C23 /* UseCase in Frameworks */,
+				B89FB0032B662B2100D19C23 /* Feature in Frameworks */,
+				B89FB0052B662B2100D19C23 /* Infra in Frameworks */,
+				B89FB0072B662B2100D19C23 /* Repository in Frameworks */,
+				B89FB0012B6629AC00D19C23 /* DomainModel in Frameworks */,
+				B89FAFFF2B6629AC00D19C23 /* Common in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +50,7 @@
 			children = (
 				B82F011C2B5D57AC008D782E /* LayeredArchitectureSample */,
 				B82F011B2B5D57AC008D782E /* Products */,
+				B89FAFFD2B6629AC00D19C23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +65,7 @@
 		B82F011C2B5D57AC008D782E /* LayeredArchitectureSample */ = {
 			isa = PBXGroup;
 			children = (
+				B89FAFFC2B66297C00D19C23 /* Info.plist */,
 				B82F011D2B5D57AC008D782E /* LayeredArchitectureSampleApp.swift */,
 				B82F011F2B5D57AC008D782E /* ContentView.swift */,
 				B82F01212B5D57B0008D782E /* Assets.xcassets */,
@@ -65,6 +80,13 @@
 				B82F01242B5D57B0008D782E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B89FAFFD2B6629AC00D19C23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +105,14 @@
 			dependencies = (
 			);
 			name = LayeredArchitectureSample;
+			packageProductDependencies = (
+				B89FAFFE2B6629AC00D19C23 /* Common */,
+				B89FB0002B6629AC00D19C23 /* DomainModel */,
+				B89FB0022B662B2100D19C23 /* Feature */,
+				B89FB0042B662B2100D19C23 /* Infra */,
+				B89FB0062B662B2100D19C23 /* Repository */,
+				B89FB0082B662B2100D19C23 /* UseCase */,
+			);
 			productName = LayeredArchitectureSample;
 			productReference = B82F011A2B5D57AC008D782E /* LayeredArchitectureSample.app */;
 			productType = "com.apple.product-type.application";
@@ -276,6 +306,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LayeredArchitectureSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -306,6 +337,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LayeredArchitectureSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -346,6 +378,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B89FAFFE2B6629AC00D19C23 /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Common;
+		};
+		B89FB0002B6629AC00D19C23 /* DomainModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DomainModel;
+		};
+		B89FB0022B662B2100D19C23 /* Feature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Feature;
+		};
+		B89FB0042B662B2100D19C23 /* Infra */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Infra;
+		};
+		B89FB0062B662B2100D19C23 /* Repository */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Repository;
+		};
+		B89FB0082B662B2100D19C23 /* UseCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UseCase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B82F01122B5D57AC008D782E /* Project object */;
 }
