@@ -84,10 +84,9 @@
 # wrap
 --maxwidth 130
 # wrapArguments
---wraparguments after-first
---wrapparameters after-first
+--wraparguments before-first
+--wrapparameters before-first
 --wrapcollections before-first
-# --closingparen same-line
 --closingparen balanced
 # wrapAttributes
 --funcattributes same-line
