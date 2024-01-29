@@ -51,7 +51,7 @@ class ModalController: ObservableObject {
     }
 
     func dismissAlert() {
-        self.alert = nil
+        alert = nil
     }
 
     func dismissAllModals() {
@@ -59,6 +59,7 @@ class ModalController: ObservableObject {
         dismissAlert()
     }
 }
+
 struct SheetTypes: Hashable {
     let uuid = UUID()
 }
