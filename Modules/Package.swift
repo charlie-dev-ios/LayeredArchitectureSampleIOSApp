@@ -2,6 +2,11 @@
 
 import PackageDescription
 
+let defaultDependencies: [Target.Dependency] = [
+    .target(name: "Common"),
+    .target(name: "DomainModel")
+]
+
 let package = Package(
     name: "Modules",
     platforms: [.iOS(.v15)],
@@ -22,11 +27,18 @@ let package = Package(
     targets: [
         .target(name: "Common"),
         .target(name: "DomainModel"),
-        .target(name: "Feature", dependencies: [
-            .product(name: "NavigationBackport", package: "NavigationBackport")
-        ]),
-        .target(name: "Infra"),
-        .target(name: "Repository"),
-        .target(name: "UseCase")
+        .target(name: "Feature", 
+                dependencies: [
+            .product(name: "NavigationBackport", package: "NavigationBackport"),
+            .target(name: "UseCase")
+        ] + defaultDependencies),
+        .target(name: "Infra",
+               dependencies: [
+                .target(name: "Repository")
+               ] + defaultDependencies),
+        .target(name: "Repository",
+               dependencies: defaultDependencies),
+        .target(name: "UseCase",
+               dependencies: defaultDependencies),
     ]
 )
