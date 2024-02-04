@@ -27,18 +27,27 @@ let package = Package(
     targets: [
         .target(name: "Common"),
         .target(name: "DomainModel"),
-        .target(name: "Feature", 
-                dependencies: [
-            .product(name: "NavigationBackport", package: "NavigationBackport"),
-            .target(name: "UseCase")
-        ] + defaultDependencies),
-        .target(name: "Infra",
-               dependencies: [
+        .target(
+            name: "Feature",
+
+            dependencies: [
+                .product(name: "NavigationBackport", package: "NavigationBackport"),
+                .target(name: "UseCase")
+            ] + defaultDependencies
+        ),
+        .target(
+            name: "Infra",
+            dependencies: [
                 .target(name: "Repository")
-               ] + defaultDependencies),
-        .target(name: "Repository",
-               dependencies: defaultDependencies),
-        .target(name: "UseCase",
-               dependencies: defaultDependencies),
+            ] + defaultDependencies
+        ),
+        .target(
+            name: "Repository",
+            dependencies: defaultDependencies
+        ),
+        .target(
+            name: "UseCase",
+            dependencies: defaultDependencies
+        )
     ]
 )
