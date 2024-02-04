@@ -29,7 +29,6 @@ let package = Package(
         .target(name: "DomainModel"),
         .target(
             name: "Feature",
-
             dependencies: [
                 .product(name: "NavigationBackport", package: "NavigationBackport"),
                 .target(name: "UseCase")
