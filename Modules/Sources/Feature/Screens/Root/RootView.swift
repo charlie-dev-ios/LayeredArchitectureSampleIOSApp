@@ -8,8 +8,12 @@
 import NavigationBackport
 import SwiftUI
 
-public struct RootView: View {
-    public init() {}
+public struct RootView<ViewModel: RootViewModel>: View {
+    @StateObject var viewModel: ViewModel
+
+    public init(viewModel: ViewModel) {
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
 
     public var body: some View {
         NBNavigationStack {
@@ -19,5 +23,5 @@ public struct RootView: View {
 }
 
 #Preview {
-    RootView()
+    RootView(viewModel: RootViewModelMock())
 }

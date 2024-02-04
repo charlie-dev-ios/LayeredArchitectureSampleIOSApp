@@ -46,7 +46,9 @@ let package = Package(
         ),
         .target(
             name: "UseCase",
-            dependencies: defaultDependencies
+            dependencies: [
+                .target(name: "Repository")
+            ] + defaultDependencies
         )
     ]
 )
