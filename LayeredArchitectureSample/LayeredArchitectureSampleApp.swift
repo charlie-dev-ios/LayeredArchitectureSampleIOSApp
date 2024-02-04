@@ -6,10 +6,10 @@
 //
 
 import Feature
+import Infra
+import Repository
 import SwiftUI
 import UseCase
-import Repository
-import Infra
 
 @main struct LayeredArchitectureSampleApp: App {
     var body: some Scene {
