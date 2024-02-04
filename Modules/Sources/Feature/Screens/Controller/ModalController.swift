@@ -11,12 +11,12 @@ import SwiftUI
 class ModalController: ObservableObject {
     static let shared = ModalController()
 
-    @Published private var sheets: [SheetTypes] = []
-    @Published private var alert: AlertTypes?
+    @Published private var sheets: [SheetType] = []
+    @Published private var alert: AlertType?
 
     private init() {}
 
-    func present(sheet: SheetTypes) {
+    func present(sheet: SheetType) {
         if !sheets.contains(sheet) {
             sheets.append(sheet)
         }
@@ -26,7 +26,11 @@ class ModalController: ObservableObject {
         sheets.removeAll()
     }
 
-    func isPresented(sheet: SheetTypes) -> Binding<Bool> {
+    func dismiss(sheet: SheetType) {
+        sheets.removeAll(where: { $0 == sheet })
+    }
+
+    func isPresented(sheet: SheetType) -> Binding<Bool> {
         .init(get: {
             self.sheets.contains(sheet)
         }, set: { newValue in
@@ -36,11 +40,11 @@ class ModalController: ObservableObject {
         })
     }
 
-    func present(alert: AlertTypes) {
+    func present(alert: AlertType) {
         self.alert = alert
     }
 
-    func isPresented(alert: AlertTypes) -> Binding<Bool> {
+    func isPresented(alert: AlertType) -> Binding<Bool> {
         .init(get: {
             self.alert == alert
         }, set: { newValue in
@@ -60,10 +64,10 @@ class ModalController: ObservableObject {
     }
 }
 
-struct SheetTypes: Hashable {
+struct SheetType: Hashable {
     let uuid = UUID()
 }
 
-struct AlertTypes: Hashable {
+struct AlertType: Hashable {
     let uuid = UUID()
 }
